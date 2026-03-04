@@ -12,7 +12,7 @@ Everlulo helps you track your workouts to maximize your time.
 Download the application from this GitHub repo and use Vite to open a local instance.
 
 Install with command: `npm install`
-Install Dependcies: `npm install styled-components` and `npm install react-router-dom`
+Install Dependencies: `npm install styled-components` and `npm install react-router-dom`
 
 ## Run the Development Server
 
