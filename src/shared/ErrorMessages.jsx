@@ -1,4 +1,3 @@
-//fulfill child prop requirement
 import styles from "./ErrorMessages.module.css";
 function ErrorMessage({ onDismiss, children }) {
   return (

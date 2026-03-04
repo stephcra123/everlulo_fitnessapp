@@ -17,8 +17,6 @@ function Dashboard({
 }) {
   const [searchParams, setSearchParams] = useSearchParams();
   const navigate = useNavigate();
-
-  // Get all unique dates sorted most recent first
   const uniqueDates = [
     ...new Set(workoutState.workoutList.map((workout) => workout.date)),
   ].sort((a, b) => new Date(b) - new Date(a));
@@ -26,8 +24,6 @@ function Dashboard({
   const totalPages = uniqueDates.length;
   const currentPage = parseInt(searchParams.get("page") || "1", 10);
   const currentDate = uniqueDates[currentPage - 1];
-
-  // Filter workouts for the current date
   const currentWorkouts = workoutState.workoutList.filter(
     (workout) => workout.date === currentDate,
   );
