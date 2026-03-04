@@ -1,16 +1,36 @@
-# React + Vite
+# Everlulo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Everlulo helps you track your workouts to maximize your time.
 
-Currently, two official plugins are available:
+## Dependencies
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- `react-router` — handles client-side routing
+- `styled-components` — used for component-level styling
 
-## React Compiler
+## Installation Instructions
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Download the application from this GitHub repo and use Vite to open a local instance.
 
-## Expanding the ESLint configuration
+Install with command: `npm install`
+Install Dependcies: `npm install styled-components` and `npm install react-router-dom`
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Run the Development Server
+
+Start the development server with the command: `npm run dev`
+
+## API Connection
+
+This app uses Airtable (https://airtable.com) as its backend. You will need a free Airtable account to run this app.
+
+### Setup Steps
+1. Create a new Airtable base
+2. Create a table with the following fields:
+   - `Exercise` — Single line text
+   - `Sets` — Number
+   - `Reps` — Number
+   - `Weight` — Number
+   - `Date` — Date
+3. In your .env.local file fill in the following with your values:
+    - `VITE_BASE_ID` — The Airtable API URL
+   - `VITE_TABLE_NAME` — the name of your table ("Workouts")
+   - `VITE_PAT` — Personal Access Token from Airtable

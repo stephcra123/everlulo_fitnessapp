@@ -1,0 +1,22 @@
+.item {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #e0e0e0;
+  list-style: none;
+}
+
+.details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.25rem;
+  cursor: pointer;
+}
+
+.details strong {
+  font-size: 1.1rem;
+}
+
+.details span {
+  font-size: 0.9rem;
+  color: #555;
+}
