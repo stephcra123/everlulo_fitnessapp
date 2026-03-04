@@ -1,5 +1,3 @@
-//First Shared Component
-
 import { forwardRef } from "react";
 import styled from "styled-components";
 
